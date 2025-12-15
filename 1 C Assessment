@@ -1,0 +1,51 @@
+#include<stdio.h>
+
+	int addition(int a, int b);
+    int subtraction(int a, int b);
+    int multiplication(int a, int b);
+    float division(float a, float b);
+
+int main() 
+{
+    int choice, num1, num2;
+    do {
+        printf("\n\n______MENU_______\n\n");
+	    printf("\n1.Addition \n2.Substraction \n3.multipliction \n4.Division\n ");
+        printf("\nEnter your choice = ");
+        scanf("%d",&choice);
+        
+        switch(choice) 
+		{
+            case 1:printf("\nEnter first numbers =  ");
+                   scanf("%d",&num1);
+                   printf("\nEnter second numbers =  ");
+                   scanf("%d",&num2);
+                   printf("Addition = %d\n",num1+num2);
+                   break;
+
+            case 2:printf("\nEnter first numbers =  ");
+                   scanf("%d",&num1);
+                   printf("\nEnter second numbers =  ");
+                   scanf("%d",&num2);
+                   printf("Subtraction = %d\n",num1-num2);
+                   break;
+
+            case 3:printf("\nEnter first numbers =  ");
+                   scanf("%d",&num1);
+                   printf("\nEnter second numbers =  ");
+                   scanf("%d",&num2);
+                   printf("Multiplication = %d\n",num1*num2);
+                   break;
+
+            case 4:printf("\nEnter first numbers =  ");
+                   scanf("%d",&num1);
+                   printf("\nEnter second numbers =  ");
+                   scanf("%d",&num2);
+                   printf("Division = %d\n", num1 / num2);
+                   break;
+
+            default:
+                printf("Please enter a valid choice!\n");
+		}
+    } while(choice != 5);
+}
