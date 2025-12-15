@@ -1,10 +1,9 @@
 #include<stdio.h>
-
-	int addition(int a, int b);
-    int subtraction(int a, int b);
-    int multiplication(int a, int b);
-    float division(float a, float b);
-
+int addition(int a, int b);
+int subtraction(int a, int b);
+int multiplication(int a, int b);
+float division(float a, float b);
+    
 int main() 
 {
     int choice, num1, num2;
@@ -47,5 +46,6 @@ int main()
             default:
                 printf("Please enter a valid choice!\n");
 		}
-    } while(choice != 5);
+    } 
+	while(choice!=4);
 }
